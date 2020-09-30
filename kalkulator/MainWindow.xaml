@@ -1,0 +1,23 @@
+﻿<Window x:Class="kalkulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kalkulator"
+        mc:Ignorable="d"
+        Title="Kalkulator UoP" Height="450" Width="800">
+    <Grid Uid="Netto">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="223*"/>
+            <RowDefinition Height="196*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button" Content="Przelicz" HorizontalAlignment="Left" Margin="321,36,0,0" VerticalAlignment="Top" Width="75" Uid="button" Click="click_button"/>
+        <CheckBox x:Name="pit0" Content="Pit 0" HorizontalAlignment="Left" Margin="244,38,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textbox_brutto" HorizontalAlignment="Left" Height="23" Margin="94,36,0,0" TextWrapping="Wrap" Text="Wpisz Zarobki Brutto" VerticalAlignment="Top" Width="120" Uid="textbox"/>
+        <TextBlock x:Name="textblock_netto" HorizontalAlignment="Left" Margin="94,112,0,0" TextWrapping="Wrap" Text="Netto:" VerticalAlignment="Top" Uid="netto" Visibility="Hidden"/>
+        <TextBlock x:Name="textblock_zarobkinetto" HorizontalAlignment="Left" Margin="132,112,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Uid="zarobkinetto" Visibility="Hidden"/>
+        <TextBlock x:Name="textbox_waluta" HorizontalAlignment="Left" Height="23" Margin="132,140,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <TextBlock x:Name="textbox_waluta2" HorizontalAlignment="Left" Height="23" Margin="83,140,0,0" TextWrapping="Wrap" Text="W Euro:" VerticalAlignment="Top" Width="120"  Visibility="Hidden"/>
+
+    </Grid>
+</Window>
